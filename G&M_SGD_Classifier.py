@@ -115,6 +115,7 @@ print("I hereby certify that I have read the University policy on Academic Integ
 ##error in scikit learn package, which version??
 from sklearn.cross_validation import cross_val_score, KFold
 from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
 # create a composite estimator made by a pipeline of the standarization and the linear model
 clf = Pipeline([(
         'scaler', StandardScaler()),
